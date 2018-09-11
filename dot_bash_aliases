@@ -1,0 +1,7 @@
+# Custom aliases
+alias l="ls"
+alias ll="ls -Galh"
+alias grep="grep --color=auto"
+
+alias ports='lsof -PiTCP -sTCP:LISTEN'
+alias myip='curl ipinfo.io/ip'
