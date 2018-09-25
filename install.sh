@@ -11,6 +11,9 @@ cp dot_vimrc ~/.vimrc
 # SSH config
 cp dot_ssh_config ~/.ssh/config
 
+# TMUX config
+cp dot_tmux_conf ~/.tmux.conf
+
 # Install Homebrew (Interactive)
 if [[ ! -e /usr/local/Homebrew ]]; then
 	echo -e "[*] Homebrew is not installed, install now."

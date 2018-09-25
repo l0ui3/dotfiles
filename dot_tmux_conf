@@ -1,0 +1,3 @@
+# Mouse mode
+bind m set -g mouse on
+bind M set -g mouse off
