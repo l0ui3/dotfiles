@@ -23,7 +23,8 @@ cask 'enpass'
 cask 'google-chrome'
 cask 'teamviewer'
 cask 'vmware-fusion'
-cask 'agenda'
+#cask 'agenda'
+cask 'omnigraffle'
 
 ## Social
 cask 'skype'
