@@ -14,6 +14,9 @@ cp ssh_config ~/.ssh/config
 # TMUX config
 cp tmux_conf ~/.tmux.conf
 
+# Link iCloud folder to home
+ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs ~/iCloud
+
 # Install Homebrew (Interactive)
 if [[ ! -e /usr/local/Homebrew ]]; then
 	echo -e "[*] Homebrew is not installed, install now."
