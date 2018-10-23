@@ -1,3 +1,6 @@
+#!/bin/bash
+# bash_profile
+
 # Custom aliases
 source ~/.bash_aliases
 

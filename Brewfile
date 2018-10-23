@@ -17,6 +17,9 @@ cask 'visual-studio-code'
 cask 'typora'
 cask 'atom'
 
+## Networking
+cask 'wireshark'
+
 ## Utilities
 cask 'istat-menus'
 cask 'enpass'
@@ -37,3 +40,4 @@ cask 'iina'
 cask 'spotify'
 cask 'qbittorrent'
 cask 'plex-media-server'
+cask 'steam'
