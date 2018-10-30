@@ -26,6 +26,10 @@ fi
 # Install packages by brew bundle
 brew bundle
 
+# Fix font render in Mojave
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
+
 # Change app language
 defaults write com.apple.iCal AppleLanguages '("zh-TW")'
 defaults write com.google.Chrome AppleLanguages '("zh-TW")'
