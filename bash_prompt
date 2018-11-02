@@ -95,8 +95,10 @@ fi;
 # Highlight the user name when logged in as root.
 if [[ "${USER}" == "root" ]]; then
     userStyle="${red}";
+    promptSign="#";
 else
     userStyle="${orange}";
+    promptSign="$";
 fi;
 
 # Highlight the hostname when connected via SSH.
@@ -117,7 +119,7 @@ PS1+="\[${green}\]\w "; # working directory
 PS1+="\[${white}\][\[${cyan}\]\t\[${white}\]]"; # time
 PS1+="\$(prompt_git \"${white} on ${violet}\")"; # Git repository details
 PS1+="\n";
-PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
+PS1+="\[${white}\]${promptSign} \[${reset}\]"; # `$` (and reset color)
 export PS1;
 
 PS2="\[${yellow}\]→ \[${reset}\]";
