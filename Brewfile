@@ -28,6 +28,7 @@ cask 'teamviewer'
 cask 'vmware-fusion'
 #cask 'agenda'
 cask 'omnigraffle'
+cask 'the-unarchiver'
 
 ## Social
 cask 'skype'
