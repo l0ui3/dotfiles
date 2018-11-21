@@ -5,6 +5,10 @@
 alias l="ls"
 alias ll="ls -Galh"
 
+# Direcotry shortcut
+alias pj="cd ~/Projects"
+alias ic="cd ~/iCloud"
+
 # Make grep with color
 alias grep="grep --color=auto"
 

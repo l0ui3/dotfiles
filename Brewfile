@@ -6,6 +6,7 @@ tap 'homebrew/bundle'
 
 # Install packages
 brew 'wget'
+brew 'pipenv'
 
 # Casks
 ## Development tools
@@ -19,6 +20,7 @@ cask 'atom'
 
 ## Networking
 cask 'wireshark'
+cask 'postman'
 
 ## Utilities
 cask 'istat-menus'
@@ -27,8 +29,9 @@ cask 'google-chrome'
 cask 'teamviewer'
 cask 'vmware-fusion'
 #cask 'agenda'
-cask 'omnigraffle'
+#cask 'omnigraffle'
 cask 'the-unarchiver'
+cask 'wunderlist'
 
 ## Social
 cask 'skype'
