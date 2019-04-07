@@ -16,7 +16,7 @@ cask 'sourcetree'
 cask 'sublime-text'
 cask 'visual-studio-code'
 cask 'typora'
-cask 'atom'
+#cask 'atom'
 
 ## Networking
 cask 'wireshark'
