@@ -15,7 +15,7 @@ cp ssh_config ~/.ssh/config
 cp tmux_conf ~/.tmux.conf
 
 # Link iCloud folder to home
-ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs ~/iCloud
+#ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs ~/iCloud
 
 # Install Homebrew (Interactive)
 if [[ ! -e /usr/local/Homebrew ]]; then
@@ -28,7 +28,7 @@ brew bundle
 
 # Fix font render in Mojave
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
-defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
 
 # Change app language
 defaults write com.apple.iCal AppleLanguages '("zh-TW")'

@@ -28,16 +28,17 @@ cask 'enpass'
 cask 'google-chrome'
 cask 'teamviewer'
 cask 'vmware-fusion'
+cask 'the-unarchiver'
+cask 'mipony'
 #cask 'agenda'
 #cask 'omnigraffle'
-cask 'the-unarchiver'
-cask 'wunderlist'
+#cask 'wunderlist'
 
 ## Social
 cask 'skype'
 cask 'discord'
-cask 'telegram'
-cask 'slack'
+#cask 'telegram'
+#cask 'slack'
 
 ## Media & Entertainments
 cask 'iina'
