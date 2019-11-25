@@ -7,19 +7,19 @@ tap 'homebrew/bundle'
 # Install packages
 brew 'wget'
 brew 'pipenv'
+brew 'autojump'
 
 # Casks
 ## Development tools
-#cask 'iterm2'
 cask 'hyper'
 cask 'sourcetree'
 cask 'sublime-text'
 cask 'visual-studio-code'
 cask 'typora'
-#cask 'atom'
+cask 'sequel-pro'
 
 ## Networking
-cask 'wireshark'
+#cask 'wireshark'
 cask 'postman'
 
 ## Utilities
@@ -44,5 +44,5 @@ cask 'discord'
 cask 'iina'
 cask 'spotify'
 cask 'qbittorrent'
-cask 'plex-media-server'
-cask 'steam'
+#cask 'plex-media-server'
+#cask 'steam'

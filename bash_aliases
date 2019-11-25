@@ -2,8 +2,11 @@
 # bash_aliases
 
 # List aliases
-alias l="ls"
-alias ll="ls -Galh"
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls -G'
+alias lsa='ls -lah'
 
 # Direcotry shortcut
 alias pj="cd ~/Projects"

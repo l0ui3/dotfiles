@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Setup .bash prompt and aliases
-#cp bash_profile ~/.bash_profile
-#cp bash_prompt ~/.bash_prompt
-cp bash_aliases ~/.bash_aliases
-
 # Vim config
 cp vimrc ~/.vimrc
 
@@ -25,13 +20,6 @@ fi
 
 # Install packages by brew bundle
 brew bundle
-
-# Change theme to hyper terminal
-sed -i '' 's/plugins: .*/plugins: \[`hyperterm-atom-dark`\],/g' ~/.hyper.js
-
-echo "Install powerline font from https://github.com/powerline/fonts"
-echo "Then, add 'Roboto Mono for Powerline' to FontFamily at ~/.hyper.js"
-echo "Finally, install oh my zh"
 
 # Fix font render in Mojave
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
