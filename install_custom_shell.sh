@@ -13,12 +13,19 @@ fi
 
 
 # Install fonts
-echo "[*] Downloading fonts (MesloLGS NF)..."
-wget -P $HOME/Library/Fonts/ https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf
-wget -P $HOME/Library/Fonts/ https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf
-wget -P $HOME/Library/Fonts/ https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf
-wget -P $HOME/Library/Fonts/ https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
-
+echo "[*] Downloading fonts if not exists (MesloLGS NF)..."
+if [[ ! -e "$HOME/Library/Fonts/MesloLGS NF Regular.ttf" ]]; then
+    wget -q --show-progress -P $HOME/Library/Fonts/ https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf
+fi
+if [[ ! -e "$HOME/Library/Fonts/MesloLGS NF Bold.ttf" ]]; then
+    wget -q --show-progress -P $HOME/Library/Fonts/ https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf
+fi
+if [[ ! -e "$HOME/Library/Fonts/MesloLGS NF Italic.ttf" ]]; then
+    wget -q --show-progress -P $HOME/Library/Fonts/ https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf
+fi
+if [[ ! -e "$HOME/Library/Fonts/MesloLGS NF Bold Italic.ttf" ]]; then
+    wget -q --show-progress -P $HOME/Library/Fonts/ https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
+fi
 
 # Configure Hyper preferences
 echo "[*] Configuring HyperTerminal..."
@@ -32,13 +39,15 @@ sed -i '' 's/plugins: .*/plugins: \[`hyperterm-atom-dark`\],/g' ~/.hyper.js
 
 # Install PowerLevel10K
 echo "[*] Installing PowerLevel10K..."
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 sed -i '' "s/^ZSH_THEME.*/ZSH_THEME=powerlevel10k\/powerlevel10k/g" ~/.zshrc
 
 
 # Remove % sign when starting SHELL
 echo "unsetopt PROMPT_SP" >> ~/.zshrc
 
+# Disable powerlevel10k configuration wizard
+echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >>! ~/.zshrc
 
 # Install Oh-My-ZSH plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
