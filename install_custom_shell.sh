@@ -51,4 +51,4 @@ echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >>! ~/.zshrc
 
 # Install Oh-My-ZSH plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-sed -i '' "s/^plugins=(.*)$/plugins=(git python docker osx zsh-autosuggestions)/g" ~/.zshrc
+sed -i '' "s/^plugins=(.*)$/plugins=(git python docker osx zsh-autosuggestions autojump)/g" ~/.zshrc
