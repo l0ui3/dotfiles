@@ -34,7 +34,7 @@ sed -i '' "s/fontFamily: '/fontFamily: '\"MesloLGS NF\", /g" ~/.hyper.js
 # Disable WebGL Rendering
 sed -i '' "s/webGLRenderer: true/webGLRenderer: false/g" ~/.hyper.js
 # Change theme to OneDark
-sed -i '' 's/plugins: .*/plugins: \[`hyperterm-atom-dark`\],/g' ~/.hyper.js
+sed -i '' 's/plugins: .*/plugins: \[`hhyper-one-dark-vivid`\],/g' ~/.hyper.js
 
 
 # Install PowerLevel10K
@@ -42,12 +42,8 @@ echo "[*] Installing PowerLevel10K..."
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 sed -i '' "s/^ZSH_THEME.*/ZSH_THEME=powerlevel10k\/powerlevel10k/g" ~/.zshrc
 
-
 # Remove % sign when starting SHELL
-echo "unsetopt PROMPT_SP" >> ~/.zshrc
-
-# Disable powerlevel10k configuration wizard
-echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >>! ~/.zshrc
+sed -i '' '1s/^/# Sleep a short time to prevent showing % sign\nsleep 0.5\n/' ~/.zshrc
 
 # Install Oh-My-ZSH plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
