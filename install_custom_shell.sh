@@ -34,7 +34,7 @@ sed -i '' "s/fontFamily: '/fontFamily: '\"MesloLGS NF\", /g" ~/.hyper.js
 # Disable WebGL Rendering
 sed -i '' "s/webGLRenderer: true/webGLRenderer: false/g" ~/.hyper.js
 # Change theme to OneDark
-sed -i '' 's/plugins: .*/plugins: \[`hhyper-one-dark-vivid`\],/g' ~/.hyper.js
+sed -i '' 's/plugins: .*/plugins: \[`hyper-one-dark-vivid`\],/g' ~/.hyper.js
 
 
 # Install PowerLevel10K
