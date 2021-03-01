@@ -26,8 +26,8 @@ brew bundle
 #defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
 
 # Reset FontSmoothing
-# defaults -currentHost delete -globalDomain AppleFontSmoothing
-# defaults write -g CGFontRenderingFontSmoothingDisabled -bool True
+defaults -currentHost delete -globalDomain AppleFontSmoothing
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool True
 
 # Show full bundle identifier of a package
 # mdls -name kMDItemCFBundleIdentifier /Applications/Hyper.app
@@ -63,7 +63,6 @@ brew bundle
 #defaults write com.apple.Terminal CGFontRenderingFontSmoothingDisabled 0
 #defaults write com.apple.Terminal CGFontRenderingFontSmoothingDisabled 0
 
-
 # Change app language
 #defaults write com.apple.iCal AppleLanguages '("zh-TW")'
 #defaults write com.google.Chrome AppleLanguages '("zh-TW")'
@@ -71,4 +70,3 @@ defaults write com.skype.skype AppleLanguages '("zh-TW")'
 defaults write com.microsoft.Excel AppleLanguages '("zh-TW")'
 defaults write com.microsoft.Word AppleLanguages '("zh-TW")'
 defaults write com.microsoft.Powerpoint AppleLanguages '("zh-TW")'
-

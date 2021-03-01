@@ -34,7 +34,9 @@ sed -i '' "s/fontFamily: '/fontFamily: '\"MesloLGS NF\", /g" ~/.hyper.js
 # Disable WebGL Rendering
 sed -i '' "s/webGLRenderer: true/webGLRenderer: false/g" ~/.hyper.js
 # Change theme to OneDark
-sed -i '' 's/plugins: .*/plugins: \[`hyper-one-dark-vivid`\],/g' ~/.hyper.js
+sed -i '' "s/plugins: .*/plugins: \[`hyper-one-dark-vivid`\],/g" ~/.hyper.js
+# Set default font weight to bold
+sed -i '' "s/fontWeight: 'normal'/fontWeight: 'bold'/g" ~/.hyper.js
 
 
 # Install PowerLevel10K
@@ -43,7 +45,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 sed -i '' "s/^ZSH_THEME.*/ZSH_THEME=powerlevel10k\/powerlevel10k/g" ~/.zshrc
 
 # Remove % sign when starting SHELL
-sed -i '' '1s/^/# Sleep a short time to prevent showing % sign\nsleep 0.5\n/' ~/.zshrc
+sed -i '' '1s/^/# Sleep a short time to prevent showing % sign\nsleep 0.3\n/' ~/.zshrc
 
 # Install Oh-My-ZSH plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
