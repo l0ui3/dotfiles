@@ -14,6 +14,9 @@ cask 'hyper'
 cask 'sublime-text'
 cask 'visual-studio-code'
 
+## Note
+cask 'notion'
+
 ## Networking
 #cask 'wireshark'
 cask 'postman'
@@ -27,6 +30,7 @@ cask 'the-unarchiver'
 ## Social
 cask 'skype'
 cask 'discord'
+cask 'telegram-desktop'
 
 ## Media & Entertainments
 cask 'iina'
