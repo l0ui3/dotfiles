@@ -34,3 +34,4 @@ echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#757575'" >> ~/.zshrc
 echo "" >> ~/.zshrc
 echo "# ZSH Auto-Completion" >> ~/.zshrc
 echo 'source <(kubectl completion zsh)' >> ~/.zshrc
+echo 'source <(helm completion zsh)' >> ~/.zshrc
