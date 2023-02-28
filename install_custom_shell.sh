@@ -50,4 +50,5 @@ sed -i '' '1s/^/# Sleep a short time to prevent showing % sign\nsleep 0.5\n/' ~/
 # Install Oh-My-ZSH plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/RobertDeRose/virtualenv-autodetect.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/virtualenv-autodetect
-sed -i '' "s/^plugins=(.*)$/plugins=(git python docker osx zsh-autosuggestions autojump virtualenv-autodetect)/g" ~/.zshrc
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+sed -i '' "s/^plugins=(.*)$/plugins=(git python docker osx zsh-autosuggestions autojump virtualenv-autodetect zsh-syntax-highlighting)/g" ~/.zshrc
