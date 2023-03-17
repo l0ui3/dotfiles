@@ -35,3 +35,8 @@ echo "" >> ~/.zshrc
 echo "# ZSH Auto-Completion" >> ~/.zshrc
 echo 'source <(kubectl completion zsh)' >> ~/.zshrc
 echo 'source <(helm completion zsh)' >> ~/.zshrc
+
+# Install Oh-My-Tmux
+git clone https://github.com/gpakosz/.tmux.git ~/.tmux
+ln -s -f ~/.tmux/.tmux.conf
+cp .tmux.conf.local ~
