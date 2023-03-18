@@ -38,5 +38,5 @@ echo 'source <(helm completion zsh)' >> ~/.zshrc
 
 # Install Oh-My-Tmux
 git clone https://github.com/gpakosz/.tmux.git ~/.tmux
-ln -s -f ~/.tmux/.tmux.conf
+ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
 cp .tmux.conf.local ~
