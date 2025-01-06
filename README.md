@@ -1,11 +1,13 @@
-# mac_dotfiles
+# Custom dotfiles
 
-My custom dotfiles for macOS.
+Some custom dotfiles for macOS, Linux, Windows
 
 ## Install
 
 ```shell
-$ bash install.sh
+cd macos
+bash provisioning-macos.sh
+bash setup-ghostty.sh
 ```
 
 ## Features
@@ -14,7 +16,7 @@ $ bash install.sh
 - VIM highlight
 - SSH connection reuse
 - Enable `tmux` mouse mode (`Ctrl+b` `+m` to turn on, `+M` to turn off)
-- Styling shell prompt (Solarized Dark theme)
+- Styling shell prompt (zsh)
 - Handy aliases
 
 ### Automatic software installation
