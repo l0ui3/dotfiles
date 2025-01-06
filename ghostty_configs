@@ -1,0 +1,33 @@
+# Font
+font-family = MesloLGS NF
+font-size = "14"
+font-thicken = true
+
+adjust-cell-width = -10%
+#adjust-cell-height = 
+
+# Theme
+#theme = "Dracula+"
+#theme = "OneHalfDark"
+theme = "Dark Modern"
+background-opacity = 0.9
+background-blur-radius = 20
+mouse-hide-while-typing = true
+
+# Window
+window-padding-balance = true
+window-inherit-font-size = true
+window-save-state = always
+window-colorspace = "display-p3"
+window-decoration = true
+window-padding-x = 10
+window-padding-y = 12
+window-height = 48
+window-width = 192
+
+macos-titlebar-proxy-icon = "hidden"
+confirm-close-surface = false
+term = "xterm-256color"
+
+keybind = alt+cmd+left=previous_tab
+keybind = alt+cmd+right=next_tab
