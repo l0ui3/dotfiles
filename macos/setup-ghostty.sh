@@ -11,7 +11,6 @@ if [[ ! -e ~/.oh-my-zsh ]]; then
     exit
 fi
 
-
 # Install fonts
 echo "[*] Downloading fonts if not exists (MesloLGS NF)..."
 if [[ ! -e "$HOME/Library/Fonts/MesloLGS NF Regular.ttf" ]]; then

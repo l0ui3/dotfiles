@@ -9,13 +9,17 @@ brew 'wget'
 brew 'autojump'
 brew 'kubernetes-cli'
 brew 'helm'
+brew 'mtr'
+brew 'k9s'
 
 # Casks
 ## Development tools
-cask 'hyper'
+cask 'ghostty'
 cask 'sublime-text'
 cask 'visual-studio-code'
 cask 'lens'
+cask 'orbstack'
+cask 'rectangle'
 
 ## Note
 cask 'notion'
@@ -25,16 +29,16 @@ cask 'notion'
 #cask 'postman'
 
 ## Utilities
-cask 'istat-menus'
+#cask 'istat-menus'
 cask 'google-chrome'
-cask 'teamviewer'
+#cask 'teamviewer'
 cask 'the-unarchiver'
-cask 'authy'
+#cask 'authy'
 
 ## Social
 cask 'skype'
 cask 'discord'
-#cask 'telegram-desktop'
+cask 'telegram-desktop'
 
 ## Media & Entertainments
 cask 'iina'
