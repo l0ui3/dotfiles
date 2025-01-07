@@ -26,4 +26,4 @@ bash setup-ghostty.sh
 ### Custom setting
 - Change some application's language
 
-![](https://github.com/l0ui3/dotfiles/blob/master/archived/image.png?raw=true)
+![](archived/image.png)
