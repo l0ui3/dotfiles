@@ -26,4 +26,5 @@ bash setup-ghostty.sh
 ### Custom setting
 - Change some application's language
 
+![](archived/image-neofetch.png)
 ![](archived/image.png)
