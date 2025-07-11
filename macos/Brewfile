@@ -12,6 +12,7 @@ brew 'helm'
 brew 'mtr'
 brew 'k9s'
 brew 'tree'
+brew 'uv'
 
 # Casks
 ## Development tools
