@@ -70,3 +70,6 @@ defaults write com.skype.skype AppleLanguages '("zh-TW")'
 defaults write com.microsoft.Excel AppleLanguages '("zh-TW")'
 defaults write com.microsoft.Word AppleLanguages '("zh-TW")'
 defaults write com.microsoft.Powerpoint AppleLanguages '("zh-TW")'
+
+# Install python tools
+uv tool install gitingest
