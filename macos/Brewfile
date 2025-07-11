@@ -11,6 +11,7 @@ brew 'kubernetes-cli'
 brew 'helm'
 brew 'mtr'
 brew 'k9s'
+brew 'tree'
 
 # Casks
 ## Development tools
