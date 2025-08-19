@@ -13,6 +13,7 @@ brew 'mtr'
 brew 'k9s'
 brew 'tree'
 brew 'uv'
+brew 'oven-sh/bun/bun'
 
 # Casks
 ## Development tools
