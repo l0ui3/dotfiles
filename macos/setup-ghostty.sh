@@ -34,11 +34,14 @@ echo "[*] Installing PowerLevel10K..."
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 sed -i '' "s/^ZSH_THEME.*/ZSH_THEME=powerlevel10k\/powerlevel10k/g" ~/.zshrc
 
+# Custom P10K Config
+cp ../config/p10k.zsh ~/.p10k.zsh
+
 # Install Oh-My-ZSH plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/RobertDeRose/virtualenv-autodetect.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/virtualenv-autodetect
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-sed -i '' "s/^plugins=(.*)$/plugins=(git python docker osx zsh-autosuggestions autojump virtualenv-autodetect zsh-syntax-highlighting kube-ps1)/g" ~/.zshrc
+sed -i '' "s/^plugins=(.*)$/plugins=(zsh-autosuggestions autojump virtualenv-autodetect zsh-syntax-highlighting kube-ps1)/g" ~/.zshrc
 
 # Always show kube context
 sed -i '' '/^[^#]*typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND=/s/^/#/' ~/.p10k.zsh
