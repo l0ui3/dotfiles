@@ -27,7 +27,7 @@ if [[ ! -e "$HOME/Library/Fonts/MesloLGS NF Bold Italic.ttf" ]]; then
 fi
 
 # Custom GhosTTY configs
-cp ghostty_configs $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+cp ../config/ghostty_config $HOME/.config/ghostty/config
 
 # Install PowerLevel10K
 echo "[*] Installing PowerLevel10K..."

@@ -1,0 +1,57 @@
+# ----------------------------
+# Ghostty optimized config for macOS
+# ----------------------------
+
+# Appearance
+## Dark
+#theme = catppuccin-mocha.conf
+## Mid Dark
+#theme = catppuccin-macchiato.conf
+## Light Dark
+#theme = catppuccin-frappe.conf
+
+# Window
+macos-titlebar-style = tabs
+window-colorspace = display-p3
+window-width = 160
+window-height = 48
+window-padding-x = 24
+window-padding-y = 20
+window-decoration = true
+window-save-state = always
+
+# Font
+#font-family = "MesloLGS NF"
+#font-size = 13
+font-size = 15
+font-thicken = true
+font-feature = -liga,-dlig
+
+# Cursor
+cursor-style = block
+cursor-color = ffffff
+
+# Scrollback
+scrollback-limit = 100000
+
+# Selection
+selection-clear-on-typing = true
+
+# Keybindings
+keybind = alt+cmd+left=previous_tab
+keybind = alt+cmd+right=next_tab
+keybind = shift+enter=text:\n
+
+# Shell integration (if using zsh or bash etc.)
+shell-integration-features = "true"
+
+# macOS ICON
+macos-icon = custom-style
+macos-icon-ghost-color = BCBEC4
+macos-icon-screen-color = 1E1F22
+
+# Misc tweaks
+minimum-contrast = 3.0
+confirm-close-surface = false
+term = "xterm-256color"
+
