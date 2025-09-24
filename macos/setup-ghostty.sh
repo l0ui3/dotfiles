@@ -44,5 +44,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sed -i '' "s/^plugins=(.*)$/plugins=(zsh-autosuggestions autojump virtualenv-autodetect zsh-syntax-highlighting kube-ps1)/g" ~/.zshrc
 echo 'ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#7A7A73"' >> ~/.zshrc
 
+# Ghostty config location
+echo 'XDG_CONFIG_HOME=~/.config' >> ~/.zshrc
+
 # Always show kube context
 sed -i '' '/^[^#]*typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND=/s/^/#/' ~/.p10k.zsh
+

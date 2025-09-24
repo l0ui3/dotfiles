@@ -11,19 +11,28 @@
 #theme = catppuccin-frappe.conf
 
 # Window
-macos-titlebar-style = tabs
+#macos-titlebar-style = tabs
 window-colorspace = display-p3
 window-width = 160
 window-height = 48
-window-padding-x = 24
-window-padding-y = 20
+#window-padding-x = 24
+#window-padding-y = 20
 window-decoration = true
 window-save-state = always
+# Window
+window-padding-balance = true
+#window-inherit-font-size = true
+#window-save-state = always
+#window-colorspace = "display-p3"
+window-padding-x = 10
+window-padding-y = 12
+#window-height = 48
+#window-width = 192
 
 # Font
 #font-family = "MesloLGS NF"
-#font-size = 13
-font-size = 15
+font-size = 13
+#font-size = 15
 font-thicken = true
 font-feature = -liga,-dlig
 
@@ -43,7 +52,7 @@ keybind = alt+cmd+right=next_tab
 keybind = shift+enter=text:\n
 
 # Shell integration (if using zsh or bash etc.)
-shell-integration-features = "true"
+#shell-integration-features = "true"
 
 # macOS ICON
 macos-icon = custom-style

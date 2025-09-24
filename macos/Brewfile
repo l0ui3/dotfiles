@@ -15,6 +15,7 @@ brew 'tree'
 brew 'uv'
 brew 'oven-sh/bun/bun'
 brew 'kubectx'
+brew 'gonzo'		# TUI for log analysis
 
 # Casks
 ## Development tools
