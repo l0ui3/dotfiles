@@ -41,7 +41,7 @@ cursor-style = block
 cursor-color = ffffff
 
 # Scrollback
-scrollback-limit = 100000
+scrollback-limit = 4294967295
 
 # Selection
 selection-clear-on-typing = true
