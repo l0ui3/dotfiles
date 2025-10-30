@@ -1,0 +1,6 @@
+  views:
+    v1/nodes:
+      columns:
+        - NAME
+        - STATUS
+        - ROLE:.metadata.labels.node-role
